@@ -68,7 +68,7 @@ def write_todos( todos_org,filepath = FILEPATH):
 
 
 if __name__ == "__main__":
-    print('Hello')
+    print('Good')
     print('Hi')
 
 
