@@ -14,8 +14,8 @@ st.subheader("This is my todo App")
 st.write("This app is to increase your productivity")
 
 for index, todo in enumerate(todos):
-    st.checkbox(todo, key=f"todo_{index}") #checkbox is here
-    #if checkbox:
+    checkbox = st.checkbox(todo, key=f"todo_{index}") #checkbox is here
+    if checkbox:
         todos.pop(index)
         functions.write_todos(todos)
         del st.session_state[f"todo_{index}"]
